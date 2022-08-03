@@ -1,13 +1,19 @@
-# update-zoom-presence-from-inbound-interaction-trigger-blueprint
-This Genesys Cloud Developer Blueprint explains how to set up Genesys Cloud and Zoom for a Genesys Cloud agent's Zoom presence to be updated upon the start and end of an inbound Genesys Cloud voice interaction. When an architect workflow receives an inbound interaction, a Zoom API call will be sent to the Zoom user associated with the Genesys Cloud agent assigned to the interaction.  The Zoom user's presence will be set to "On a Call" when the voice interaction begins.  When the interaction ends, the Zoom user will be returned to "Available".
+# Update the presence of a Zoom user based upon an inbound interaction
+
+This Genesys Cloud Developer Blueprint explains how to set up Genesys Cloud and Zoom to update a Genesys Cloud agent's presence in Zoom at the start and end of an inbound Genesys Cloud voice interaction.
+
+When an Architect workflow receives an inbound interaction, a Zoom API call is sent to the Zoom user that is associated with the Genesys Cloud agent who is assigned to the interaction. The Zoom user's presence is set to "Do Not Disturb" when the voice interaction begins. When the interaction ends, the Zoom user's presence is set to "Available."
+
 The following illustration shows the presence solution from an agent’s point of view.
 
-![Zoom agent view](blueprint/images/zoom-workflow.png "Zoom Presence update from an agent's point of view")
+![Zoom presence update from an agent's point of view](images/zoom-workflow.png "Zoom presence update from an agent's point of view")
 
-The following shows the end to end agent experience this blueprint enables.
+The following shows the end-to-end agent experience that this solution enables.
 
-![Overview](blueprint/images/ZoomGCPresenceSyncBlueprint.gif "Overview")
+![End-to-end agent experience](images/ZoomGCPresenceSyncBlueprint.gif "End-to-end agent experience")
 
-To enable Zoom presence updates to be triggered from Genesys Cloud, you use several public APIs that are available from Genesys Cloud and Zoom. The following illustration shows the API calls between Genesys Cloud and Zoom.
+To trigger Zoom presence updates from Genesys Cloud, you use several public APIs that are available from Genesys Cloud and Zoom. The following illustration shows the API calls between Genesys Cloud and Zoom.
 
-![Zoom integration](blueprint/images/zoom-architect.png "The API calls between Genesys Cloud and Zoom API")
+![The API calls between Genesys Cloud and Zoom](images/zoom-architect.png "The API calls between Genesys Cloud and Zoom")
+
+> View the full [Update the presence of a Zoom user based upon an inbound interaction ](https://developer.genesys.cloud/blueprints/update-zoom-presence-from-inbound-interaction-trigger-blueprint) in the Genesys Cloud Developer Center.
