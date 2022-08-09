@@ -1,5 +1,5 @@
 ---
-title: Beta: Update the presence of a Zoom user based upon an inbound interaction
+title: "Beta: Update the presence of a Zoom user based upon an inbound interaction"
 author: yuri.yeti
 indextype: blueprint
 icon: blueprint
