@@ -3,7 +3,7 @@ title: Update the presence of a Zoom user based upon an inbound interaction
 author: yuri.yeti
 indextype: blueprint
 icon: blueprint
-image: images/6COpenScriptDropdown.png
+image: images/zoom-workflow.png
 category: 6
 summary: |
   This Genesys Cloud Developer Blueprint explains how to set up Genesys Cloud and Zoom to update a Genesys Cloud agent's presence in Zoom at the start and end of an inbound Genesys Cloud voice interaction.
