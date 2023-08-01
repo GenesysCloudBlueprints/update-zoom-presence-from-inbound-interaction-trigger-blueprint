@@ -7,7 +7,7 @@
       "requestUrlTemplate": "https://api.zoom.us/v2/users/${input.user}/presence_status",
       "requestType": "PUT",
       "headers": {
-        "authorization": "bearer ${authResponse.token}",
+        "authorization": "bearer ${authResponse.access_token}",
         "content-type": "application/json"
       },
       "requestTemplate": "{\n      \"status\": \"${input.status}\"\n  }"
