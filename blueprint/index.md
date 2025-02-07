@@ -99,7 +99,7 @@ To enable communication from Genesys Cloud to Zoom, add a web services data acti
 
    ![Configure integration credentials](images/1CConfigurationCredentials.png "Configure integration credentials")
 
-4. From the **Credential Type** list, select **User Defined**. Then click **Add Credential Field** to create three fields. In the field names, type "loginUrl", "clientId" and "clientSecret".  For the "loginUrl", type "https://zoom.us/oauth/token?grant_type=account_credentials&account_id={{your_account_id}}" where {{your_account_id}} is replaced with the Account ID you copied from your Zoom Server to Server OAuth app.  For "clientId" and "clientSecret", paste the corresponding values from your Zoom Server to Server OAuth app.  Then click **OK**.
+4. From the **Credential Type** list, select **User Defined**. Then click **Add Credential Field** to create three fields. In the field names, type `loginUrl`, `clientId` and `clientSecret`.  For the `loginUrl`, type `https://zoom.us/oauth/token?grant_type=account_credentials&account_id={{your_account_id}}` where `{{your_account_id}}` is replaced with the Account ID you copied from your Zoom Server to Server OAuth app.  For `clientId` and `clientSecret`, paste the corresponding values from your Zoom Server to Server OAuth app.  Then click **OK**.
 
    ![Configure integration credentials](images/1DFieldsandValues.png "Configure integration credentials")
 
@@ -156,7 +156,7 @@ To create the event orchestration triggers via Postman, you must have a Genesys 
 
    ![Copy the client ID and secret values of the OAuth client](images/2COAuthClientCredentials.png "Copy the client ID and secret values of the OAuth client")
 
-### Import the Update Zoom User Presence data action ction
+### Import the Update Zoom User Presence data action
 
 This data action calls the Zoom API to update the Zoom user's presence.
 
@@ -182,7 +182,7 @@ This solution includes two Architect workflows that use the data action you just
 
 These workflows will be called by the event orchestration triggers, which you will create in the next section. When triggered, these Architect workflows will set the Zoom variable, and then update the user's presence in Zoom via the Zoom API.
 
-1. From the [update-zoom-presence-from-inbound-interaction](https://github.com/GenesysCloudBlueprints/update-zoom-presence-from-inbound-interaction-trigger-blueprint") GitHub repository, download the GC User Set Zoom User to On a Call.i3WorkFlow file.   
+1. From the [update-zoom-presence-from-inbound-interaction](https://github.com/GenesysCloudBlueprints/update-zoom-presence-from-inbound-interaction-trigger-blueprint "Goes to the Github repository of this blueprint") GitHub repository, download the GC User Set Zoom User to On a Call.i3WorkFlow file.   
 
 2. In Genesys Cloud, navigate to **Admin** > **Architect** > **Flows:Workflow** and click **Add**.
 
